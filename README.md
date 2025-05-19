@@ -12,6 +12,14 @@
 
 ---
 
+## 🛠️Tech Stack & Skills
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=c,python,java,mysql,github,html,css,js,vscode,pycharm,idea,git" />
+</div>
+
+
+<!--
 ## 🛠️ Skills & Tools
 
 <p align="center">
@@ -28,8 +36,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" title="PyCharm" alt="PyCharm" width="40" height="40"/>&nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" title="IntelliJ" alt="IntelliJ" width="40" height="40"/>
 </p>
-
-
+-->
 ---
 
 ### 📊 GitHub Stats
@@ -83,23 +90,26 @@ Want to collaborate or just say hi? Reach out to me here:
 
 <div align="center">
   <a href="https://www.linkedin.com/in/mojammil-husain-profile/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" title="LinkedIn" alt="LinkedIn" width="40" height="40"/>
+  </a>&nbsp;&nbsp;
   <a href="https://leetcode.com/u/mhsiddiqui027/" target="_blank">
-    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" title="LeetCode" alt="LeetCode" width="40" height="40"/>
+  </a>&nbsp;&nbsp;
+  <a href="https://x.com/MrSiddqui27" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" title="X" alt="X/Twitter" width="40" height="40"/>
+  </a>&nbsp;&nbsp;
+  <a href="https://github.com/mr-siddiqui27/Portfolio/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=firefox&logoColor=white" />
   </a>
   <a href="https://www.instagram.com/mr_siddiqui.27/" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
   </a>
-  <a href="https://github.com/mr-siddiqui27/Portfolio/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=firefox&logoColor=white" />
-  </a>
-  <a href="https://x.com/MrSiddqui27" target="_blank">
-    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=twitter&logoColor=white" />
-  </a>
 </div>
 
 ---
+
+ 
+
 
 
 <!--
