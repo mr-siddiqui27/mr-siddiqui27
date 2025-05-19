@@ -63,12 +63,15 @@
 
 Here are some of the cool things I've been building:
 
-- 🍽️ [**EdTech Platform**](https://github.com/mr-siddiqui27/SPbyAnuragSir/)  
+- 🎓📱 [**EdTech Platform**](https://github.com/mr-siddiqui27/SPbyAnuragSir/)  
   *Built a client-based EdTech platform with courses, profiles, login system, and real-world GitHub collaboration.*
 
 - ❓ [**Modern Portfolio**](https://github.com/mr-siddiqui27/Portfolio/)  
   *Personal portfolio to showcase my skills and projects. Built with HTML, CSS, JavaScript..*
 
+- 🍽️ [**Restorant Billing System**](https://github.com/mr-siddiqui27/Restorant-Billing-System/)  
+  *A Python-based Restaurant Billing System that efficiently manages item selection, calculates totals with taxes, and generates formatted bills in real-time.*
+  
 > More exciting projects coming soon!
 
 ---
