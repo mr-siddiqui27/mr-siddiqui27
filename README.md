@@ -107,11 +107,3 @@ Want to collaborate or just say hi? Reach out to me here:
 </div>
 
 ---
-
- 
-
-
-
-<!--
-mr-siddiqui27/mr-siddiqui27 is a special repository because its README.md appears on your GitHub profile.
--->
