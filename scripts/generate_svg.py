@@ -1,1 +1,198 @@
+from pathlib import Path
+from html import escape
 
+WIDTH = 1280
+HEIGHT = 640
+
+# Read ASCII Portrait
+portrait_lines = Path("../portrait.txt").read_text(
+    encoding="utf-8",
+    errors="ignore"
+).splitlines()
+
+portrait = []
+
+y = 150
+
+for line in portrait_lines:
+    portrait.append(
+        f'<tspan x="90" y="{y}">{escape(line)}</tspan>'
+    )
+    y += 8
+
+portrait_svg = "\n".join(portrait)
+
+svg = f"""<svg xmlns="http://www.w3.org/2000/svg"
+width="{WIDTH}"
+height="{HEIGHT}"
+viewBox="0 0 {WIDTH} {HEIGHT}">
+
+<style>
+text {{
+    font-family: "JetBrains Mono", monospace;
+}}
+
+.title {{
+    fill:#e5e7eb;
+    font-size:20px;
+}}
+
+.small {{
+    fill:#38bdf8;
+    font-size:16px;
+}}
+
+.border {{
+    fill:none;
+    stroke:#22d3ee;
+    stroke-width:2;
+}}
+
+.panel {{
+    fill:#020617;
+}}
+
+.line {{
+    stroke:#1e293b;
+    stroke-width:1;
+}}
+
+
+ 
+
+</style>
+
+<!-- Background -->
+<rect width="100%" height="100%" fill="#020617"/>
+
+<!-- Terminal -->
+<rect x="40" y="40"
+width="1200"
+height="560"
+rx="12"
+class="panel"
+stroke="#22d3ee"
+stroke-width="2"/>
+
+<!-- Top Bar -->
+<rect
+x="40"
+y="40"
+width="1200"
+height="40"
+fill="#0f172a"/>
+
+<!-- Buttons -->
+<circle cx="70" cy="60" r="7" fill="#ef4444"/>
+<circle cx="95" cy="60" r="7" fill="#f59e0b"/>
+<circle cx="120" cy="60" r="7" fill="#22c55e"/>
+
+<!-- Title -->
+<text
+x="600"
+y="65"
+text-anchor="middle"
+class="title">
+mojammil@dev:~ ./profile.sh --live
+</text>
+
+<!-- Divider -->
+<line
+x1="40"
+y1="80"
+x2="1240"
+y2="80"
+class="line"/>
+
+<!-- Left Panel -->
+
+<text x="90" y="120" class="small">VISUAL.MAP</text>
+
+<rect
+x="70"
+y="135"
+width="420"
+height="380"
+rx="8"
+fill="none"
+stroke="#1d4ed8"
+stroke-width="1"/>
+
+
+<!-- ASCII Portrait -->
+
+<text
+x="0"
+y="0"
+font-family="JetBrains Mono"
+font-size="8"
+fill="#38bdf8"
+xml:space="preserve">
+
+{portrait_svg}
+
+</text>
+
+
+<!-- Right Panel -->
+
+<text x="560" y="120" class="small">SYSTEM.INFO</text>
+
+<rect
+x="540"
+y="135"
+width="650"
+height="380"
+rx="8"
+fill="none"
+stroke="#1d4ed8"
+stroke-width="1"/>
+
+<!-- Section -->
+
+<text x="570" y="175" class="title" fill="#a855f7">
+mojammil@devos
+</text>
+
+<text x="570" y="210" class="small">
+Subject ........................ Mojammil Husain
+</text>
+
+<text x="570" y="240" class="small">
+Role ........................... Java Backend Developer
+</text>
+
+<text x="570" y="270" class="small">
+Origin ......................... India
+</text>
+
+<text x="570" y="300" class="small">
+Education ...................... B.Tech CSE
+</text>
+
+<text x="570" y="330" class="small">
+Status ......................... Building • Learning • Shipping
+</text>
+
+<text x="570" y="380" class="small">
+Core Lang ...................... Java, Python, C
+</text>
+
+<text x="570" y="410" class="small">
+Core Backend ................... Spring Boot
+</text>
+
+<text x="570" y="440" class="small">
+Core Database .................. MongoDB, MySQL
+</text>
+
+<text x="570" y="470" class="small">
+Core Cloud ..................... AWS
+</text>
+
+</svg>
+"""
+
+Path("../dark.svg").write_text(svg, encoding="utf-8")
+
+print("dark.svg generated")
