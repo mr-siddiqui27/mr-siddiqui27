@@ -1,5 +1,10 @@
 <div align="center">
 
+<p align="center">
+  <img src="./dark.svg" alt="GitHub Banner" width="100%">
+</p>
+
+
 # Hi 👋 I'm Mojammil Husain
 
 <h3>Java Backend Developer</h3>
