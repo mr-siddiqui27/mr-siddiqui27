@@ -65,6 +65,25 @@ text {{
 <!-- Background -->
 <rect width="100%" height="100%" fill="#020617"/>
 
+<defs>
+    <clipPath id="portraitClip">
+        <rect
+            x="70"
+            y="135"
+            width="420"
+            height="0">
+
+            <animate
+                attributeName="height"
+                values="0;380;380;0"
+                keyTimes="0;0.45;0.80;1"
+                dur="6s"
+                repeatCount="indefinite"/>
+
+        </rect>
+    </clipPath>
+</defs>
+
 <!-- Terminal -->
 <rect x="40" y="40"
 width="1200"
@@ -121,6 +140,8 @@ stroke-width="1"/>
 
 <!-- ASCII Portrait -->
 
+<g clip-path="url(#portraitClip)">
+
 <text
 x="0"
 y="0"
@@ -132,6 +153,8 @@ xml:space="preserve">
 {portrait_svg}
 
 </text>
+
+</g>
 
 
 <!-- Right Panel -->
